@@ -7,7 +7,7 @@
 
 void compressor::add_block(std::vector<uint8_t> const &new_block) {
     if (counter.empty())
-        counter.resize(255);
+        counter.resize(256);
     for (uint8_t i : new_block)
         counter[i]++;
 }
@@ -21,10 +21,10 @@ bool cmp(tree *a, tree *b){
 }
 
 void compressor::prepare_trees() {
-    for (uint8_t i = 0; i < counter.size(); i++){
+    for (size_t i = 0; i < 256; i++){
         if (counter[i] > 0){
             std::vector<uint8_t> cur;
-            cur.push_back(i);
+            cur.push_back((uint8_t)i);
             tree *t = new tree(nullptr, nullptr, cur, counter[i]);
             trees.push_back(t);
         }
@@ -67,7 +67,7 @@ void compressor::create_tree() {
 }
 
 void compressor::create_code() {
-    code.resize(255);
+    code.resize(256);
     std::vector<uint8_t> cur;
     dfs(trees[0], cur, chars, code);
     cod(trees[0], tr);
@@ -143,7 +143,7 @@ void compressor::make_zero() {
 
 uint64_t compressor::calc_len() {
     length = 0;
-    for(size_t i = 0; i < 255; i++){
+    for(size_t i = 0; i <= 255; i++){
         length += (uint64_t)(counter[i] * code[i].size());
     }
     return length;

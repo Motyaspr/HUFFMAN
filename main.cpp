@@ -144,11 +144,11 @@ int main(int argc, char* argv[]) {
     //freopen("tests/a.in", "w", stdout);
     if (argc != 4) {
         std::cout << "wrong count of args";
-        return 1;
+        return 0;
     }
     if (strcmp(argv[1], "compress") != 0 && strcmp(argv[1], "decode") != 0) {
         std::cout << "wrong format of input";
-        return 1;
+        return 0;
     }
     if (strcmp(argv[1], "compress") == 0) {
         try {
@@ -168,9 +168,9 @@ int main(int argc, char* argv[]) {
         }
     }
 /*
-    std::string s = "it1.huf";
+    std::string s = "kek.huf";
     s = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s;
-    std::string s1 = "it1.in";
+    std::string s1 = "kek.in";
     s1 = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s1;
     check(s, s1);*/
     return 0;
