@@ -150,6 +150,33 @@ check_two_files.cpp.s:
 	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/check_two_files.cpp.s
 .PHONY : check_two_files.cpp.s
 
+lib/coder.o: lib/coder.cpp.o
+
+.PHONY : lib/coder.o
+
+# target to build an object file
+lib/coder.cpp.o:
+	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/lib/coder.cpp.o
+.PHONY : lib/coder.cpp.o
+
+lib/coder.i: lib/coder.cpp.i
+
+.PHONY : lib/coder.i
+
+# target to preprocess a source file
+lib/coder.cpp.i:
+	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/lib/coder.cpp.i
+.PHONY : lib/coder.cpp.i
+
+lib/coder.s: lib/coder.cpp.s
+
+.PHONY : lib/coder.s
+
+# target to generate assembly for a file
+lib/coder.cpp.s:
+	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/lib/coder.cpp.s
+.PHONY : lib/coder.cpp.s
+
 lib/compressor.o: lib/compressor.cpp.o
 
 .PHONY : lib/compressor.o
@@ -176,6 +203,33 @@ lib/compressor.s: lib/compressor.cpp.s
 lib/compressor.cpp.s:
 	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.s
 .PHONY : lib/compressor.cpp.s
+
+lib/counter.o: lib/counter.cpp.o
+
+.PHONY : lib/counter.o
+
+# target to build an object file
+lib/counter.cpp.o:
+	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/lib/counter.cpp.o
+.PHONY : lib/counter.cpp.o
+
+lib/counter.i: lib/counter.cpp.i
+
+.PHONY : lib/counter.i
+
+# target to preprocess a source file
+lib/counter.cpp.i:
+	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/lib/counter.cpp.i
+.PHONY : lib/counter.cpp.i
+
+lib/counter.s: lib/counter.cpp.s
+
+.PHONY : lib/counter.s
+
+# target to generate assembly for a file
+lib/counter.cpp.s:
+	$(MAKE) -f CMakeFiles/HUFFMAN.dir/build.make CMakeFiles/HUFFMAN.dir/lib/counter.cpp.s
+.PHONY : lib/counter.cpp.s
 
 lib/decoder.o: lib/decoder.cpp.o
 
@@ -270,9 +324,15 @@ help:
 	@echo "... check_two_files.o"
 	@echo "... check_two_files.i"
 	@echo "... check_two_files.s"
+	@echo "... lib/coder.o"
+	@echo "... lib/coder.i"
+	@echo "... lib/coder.s"
 	@echo "... lib/compressor.o"
 	@echo "... lib/compressor.i"
 	@echo "... lib/compressor.s"
+	@echo "... lib/counter.o"
+	@echo "... lib/counter.i"
+	@echo "... lib/counter.s"
 	@echo "... lib/decoder.o"
 	@echo "... lib/decoder.i"
 	@echo "... lib/decoder.s"

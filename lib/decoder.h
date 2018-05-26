@@ -23,7 +23,6 @@ private:
 public:
     decoder() = default;
     decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct);
-    void make_code();
 
     void decode_block(std::vector<uint8_t> const &block, std::vector<uint8_t> &out);
 

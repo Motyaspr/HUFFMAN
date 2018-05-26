@@ -8,36 +8,12 @@
 #include <cstddef>
 
 
-decoder::decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct) : chars(std::move(_chars)), struct_tree(
-        std::move(_struct)) {
-}
-
-void decoder::make_code() {
-    cod.resize(256);
-    size_t cur_ind = 0;
-    std::vector<uint8_t> cur;
-    size_t ind2 = 0;
-    while(cur_ind < struct_tree.size()){
-        if (struct_tree[cur_ind] == 1){
-            cur.push_back(1);
-            cur_ind++;
-        }
-        else{
-            cod[chars[ind2++]] = cur;
-            //mp[cur] = chars[ind2 - 1];
-            while(!cur.empty() && cur.back() == 0)
-                cur.pop_back();
-            cur.pop_back();
-            cur.push_back(0);
-            cur_ind++;
-        }
-    }
-    //mp[cur] = chars[ind2];
-}
-
 tree *ntree;
 
-void decoder::make_tree() {
+decoder::decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct) {
+    chars = _chars;
+    struct_tree = _struct;
+    decoded = 0;
     ntree = new tree();
     build(ntree, chars, struct_tree);
 }
@@ -83,7 +59,6 @@ void decoder::decode_block(std::vector<uint8_t> const &block, std::vector<uint8_
             }
         }
         is_first = false;
-        bool f = false;
         while (j >= 0) {
             last.push_back((bool) ((i >> j) & 1));
             j--;

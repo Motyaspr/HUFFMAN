@@ -12,8 +12,6 @@ tree::tree() {
     r = nullptr;
 }
 
-tree::tree(tree *_l, tree *_r, tree *_p) : l(_l), r(_r), p(_p){}
-
 void tree::merge_trees(tree *a, tree *b) {
     std::vector<uint8_t> cur = a->symbs;
     for (uint8_t symb : b->symbs)
@@ -61,9 +59,6 @@ void cod(tree *v, std::vector<uint8_t> &cur) {
     }
 }
 
-bool tree::cmp(tree *a, tree *b) {
-    return a->get_weight() < b->get_weight();
-}
 
 void build(tree *ntree, std::vector<uint8_t> &symbs, std::vector<uint8_t> &struc) {
     size_t curind1 = 0;
@@ -104,10 +99,5 @@ tree *tree::get_r() {
 uint8_t tree::get_symb() {
     return this->symbs[0];
 }
-
-tree *tree::get_p() {
-    return this->p;
-}
-
 
 

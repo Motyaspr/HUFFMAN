@@ -21,15 +21,12 @@ private:
     friend void build(tree *ntree, std::vector<uint8_t> &symbs, std::vector<uint8_t> &struc);
 public:
     tree();
-    tree(tree *_l, tree *_r, tree *_p);
     tree(tree *l, tree *r, std::vector<uint8_t> _symbs, uint64_t _w);
     void merge_trees(tree *a, tree *b);
     uint64_t get_weight();
-    bool cmp(tree *a, tree *b);
     tree* get_l();
     tree* get_r();
     uint8_t get_symb();
-    tree* get_p();
 };
 
 

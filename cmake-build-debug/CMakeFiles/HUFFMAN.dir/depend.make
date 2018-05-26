@@ -3,9 +3,19 @@
 
 CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o: ../check_two_files.cpp
 
+CMakeFiles/HUFFMAN.dir/lib/coder.cpp.o: ../lib/coder.cpp
+CMakeFiles/HUFFMAN.dir/lib/coder.cpp.o: ../lib/coder.h
+CMakeFiles/HUFFMAN.dir/lib/coder.cpp.o: ../lib/counter.h
+CMakeFiles/HUFFMAN.dir/lib/coder.cpp.o: ../lib/tree.h
+
+CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o: ../lib/coder.h
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o: ../lib/compressor.cpp
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o: ../lib/compressor.h
+CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o: ../lib/counter.h
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o: ../lib/tree.h
+
+CMakeFiles/HUFFMAN.dir/lib/counter.cpp.o: ../lib/counter.cpp
+CMakeFiles/HUFFMAN.dir/lib/counter.cpp.o: ../lib/counter.h
 
 CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o: ../lib/decoder.cpp
 CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o: ../lib/decoder.h
@@ -14,7 +24,9 @@ CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o: ../lib/tree.h
 CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o: ../lib/tree.cpp
 CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o: ../lib/tree.h
 
+CMakeFiles/HUFFMAN.dir/main.cpp.o: ../lib/coder.h
 CMakeFiles/HUFFMAN.dir/main.cpp.o: ../lib/compressor.h
+CMakeFiles/HUFFMAN.dir/main.cpp.o: ../lib/counter.h
 CMakeFiles/HUFFMAN.dir/main.cpp.o: ../lib/decoder.h
 CMakeFiles/HUFFMAN.dir/main.cpp.o: ../lib/tree.h
 CMakeFiles/HUFFMAN.dir/main.cpp.o: ../main.cpp

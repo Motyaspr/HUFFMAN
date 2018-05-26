@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10)
+cmake_minimum_required(VERSION 3.1)
 project(HUFFMAN)
 
 set(CMAKE_CXX_STANDARD 11)
@@ -9,4 +9,4 @@ if (CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
 endif ()
 
 
-add_executable(HUFFMAN main.cpp lib/compressor.cpp lib/compressor.h lib/tree.cpp lib/tree.h lib/decoder.cpp lib/decoder.h check_two_files.cpp)
+add_executable(HUFFMAN main.cpp lib/compressor.cpp lib/compressor.h lib/tree.cpp lib/tree.h lib/decoder.cpp lib/decoder.h check_two_files.cpp lib/counter.cpp lib/counter.h lib/coder.cpp lib/coder.h)

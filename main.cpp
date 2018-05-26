@@ -10,7 +10,7 @@ const size_t SZ = 1;
 void compress(std::string in, std::string out){
     std::ifstream input(in, std::ios::binary);
     if (!input.is_open()){
-        std::__throw_runtime_error("wrong name of file");
+        std::runtime_error("wrong name of file");
     }
     uint64_t sz = 0;
     input.seekg(0, std::ios::end);
@@ -21,17 +21,16 @@ void compress(std::string in, std::string out){
     }
 
     input.seekg(0, std::ios::beg);
-    compressor c;
+    counter t;
     uint64_t cur_read = 0;
     std::vector<uint8_t> q;
     while(sz > cur_read){
         q.resize(std::min(SZ, sz - cur_read));
         input.read((char *) q.data(), q.size());
-        c.add_block(q);
+        t.add_block(q);
         cur_read += q.size();
     }
-    c.make_zero();
-    c.do_all();
+    compressor c(t);
     std::vector<uint8_t> cur = c.get_tr();
 
     size_t sz1 = cur.size();
@@ -45,7 +44,6 @@ void compress(std::string in, std::string out){
     input.seekg(0, std::ios::beg);
     std::vector<uint8_t> decod;
     cur_read = 0;
-    c.make_zero();
     uint64_t sz3 = c.calc_len();
     //sz3 = sz3 / 8 + (sz3 % 8 != 0);
     output.write((char *) &sz3, sizeof(sz3));
@@ -65,8 +63,8 @@ void compress(std::string in, std::string out){
 void decode(std::string inputFileName, std::string outputFileName)
                                                                                                                                                                                                                                             {
     std::ifstream input(inputFileName, std::ios::binary);
-    if (input.is_open() == false){
-        std::__throw_runtime_error("wrong name of file");
+    if (!input.is_open()){
+        std::runtime_error("wrong name of file");
     }
 
     uint64_t input_file_length;
@@ -75,7 +73,7 @@ void decode(std::string inputFileName, std::string outputFileName)
     if (input_file_length == 0)
         return;
     if (input_file_length < 21)
-        std::__throw_runtime_error("can't decode this file");
+        std::runtime_error("can't decode this file");
     std::ofstream output(outputFileName, std::ios::binary);
 
     input.seekg(0, std::ios::beg);
@@ -97,8 +95,6 @@ void decode(std::string inputFileName, std::string outputFileName)
     std::vector<uint8_t> cur;
     decoder d(symbs, struc);
     d.get_need(need_read);
-    d.clear();
-    d.make_tree();
     uint64_t readd = 0;
     while(was_read < input_file_length)
     {
@@ -112,7 +108,7 @@ void decode(std::string inputFileName, std::string outputFileName)
         readd += cur.size();
     }
     if (d.get_need() != d.get_decoded())
-        std::__throw_runtime_error("wrong text");
+        std::runtime_error("wrong text");
 
 }
 
@@ -153,16 +149,16 @@ int main(int argc, char* argv[]) {
             std::string s = argv[2];
             std::string s1 = argv[3];;
             compress(s, s1);
-        } catch (...) {
-            std::cout << "FAILED";
+        } catch (std::runtime_error &ex) {
+            std::cout << ex.what();
         }
     } else {
         try {
             std::string s = argv[2];
             std::string s1 = argv[3];
             decode(s, s1);
-        } catch (...) {
-            std::cout << "FAILED";
+        } catch (std::runtime_error &ex) {
+            std::cout << ex.what();
         }
     }
     /*

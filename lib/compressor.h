@@ -11,10 +11,12 @@
 #include <cstddef>
 #include <algorithm>
 #include "tree.h"
+#include "counter.h"
+#include "coder.h"
 
 class compressor {
 private:
-    std::vector<uint64_t> counter;
+    std::vector<uint64_t> freq;
     uint64_t length;
     std::vector<tree*> trees;
     std::vector<std::vector<uint8_t>> code;
@@ -25,19 +27,12 @@ private:
     size_t not_used;
 public:
     compressor() = default;
-    std::vector<uint64_t> get_counter();
+    compressor(counter const &cop);
     uint64_t calc_len();
     std::vector<uint8_t> get_chars();
     std::vector<uint8_t> get_tr();
-    void add_block(std::vector<uint8_t> const &new_block);
-    void prepare_trees();
-    void create_tree();
-    void create_code();
-    void do_all();
     size_t get_not_used();
     uint8_t get_last();
-    void make_zero();
-    uint8_t get_leaves();
     void compress_block(std::vector<uint8_t> const &block, std::vector<uint8_t> &out);
 };
 
