@@ -20,12 +20,14 @@ bool cmp(tree *a, tree *b){
     return a->get_weight() > b->get_weight();
 }
 
+                                                                                                                                                    tree *t;
+
 void compressor::prepare_trees() {
     for (size_t i = 0; i < 256; i++){
         if (counter[i] > 0){
             std::vector<uint8_t> cur;
             cur.push_back((uint8_t)i);
-            tree *t = new tree(nullptr, nullptr, cur, counter[i]);
+            t = new tree(nullptr, nullptr, cur, counter[i]);
             trees.push_back(t);
         }
     }
@@ -45,6 +47,10 @@ void compressor::create_tree() {
         trees.pop_back();
         tree* r = new tree();
         r->merge_trees(q, w);
+        if (trees.empty()) {
+            trees.push_back(r);
+            continue;
+        }
         if ((*trees.begin())->get_weight() < r->get_weight()){
             trees.insert(trees.begin(), r);
             continue;

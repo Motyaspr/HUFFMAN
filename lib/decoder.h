@@ -16,7 +16,7 @@ private:
     std::vector<uint8_t> chars;
     std::vector<uint8_t> struct_tree;
     std::vector<std::vector<uint8_t>> cod;
-    tree* ntree;
+    //tree* ntree;
     uint64_t decoded, need;
     std::vector<bool> last;
     //std::unordered_map<std::vector<uint8_t>, uint8_t> mp;

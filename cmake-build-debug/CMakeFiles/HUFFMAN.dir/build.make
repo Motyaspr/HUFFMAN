@@ -43,10 +43,10 @@ RM = /snap/clion/22/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/motyaspr/CLionProjects/HUFFMAN
+CMAKE_SOURCE_DIR = /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug
+CMAKE_BINARY_DIR = /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/HUFFMAN.dir/depend.make
@@ -59,16 +59,16 @@ include CMakeFiles/HUFFMAN.dir/flags.make
 
 CMakeFiles/HUFFMAN.dir/main.cpp.o: CMakeFiles/HUFFMAN.dir/flags.make
 CMakeFiles/HUFFMAN.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HUFFMAN.dir/main.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/main.cpp.o -c /home/motyaspr/CLionProjects/HUFFMAN/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/HUFFMAN.dir/main.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/main.cpp.o -c /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/main.cpp
 
 CMakeFiles/HUFFMAN.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HUFFMAN.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HUFFMAN/main.cpp > CMakeFiles/HUFFMAN.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/main.cpp > CMakeFiles/HUFFMAN.dir/main.cpp.i
 
 CMakeFiles/HUFFMAN.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HUFFMAN.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HUFFMAN/main.cpp -o CMakeFiles/HUFFMAN.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/main.cpp -o CMakeFiles/HUFFMAN.dir/main.cpp.s
 
 CMakeFiles/HUFFMAN.dir/main.cpp.o.requires:
 
@@ -83,16 +83,16 @@ CMakeFiles/HUFFMAN.dir/main.cpp.o.provides.build: CMakeFiles/HUFFMAN.dir/main.cp
 
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o: CMakeFiles/HUFFMAN.dir/flags.make
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o: ../lib/compressor.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o -c /home/motyaspr/CLionProjects/HUFFMAN/lib/compressor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o -c /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.cpp
 
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HUFFMAN/lib/compressor.cpp > CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.cpp > CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.i
 
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HUFFMAN/lib/compressor.cpp -o CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.cpp -o CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.s
 
 CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o.requires:
 
@@ -107,16 +107,16 @@ CMakeFiles/HUFFMAN.dir/lib/compressor.cpp.o.provides.build: CMakeFiles/HUFFMAN.d
 
 CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o: CMakeFiles/HUFFMAN.dir/flags.make
 CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o: ../lib/tree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o -c /home/motyaspr/CLionProjects/HUFFMAN/lib/tree.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o -c /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.cpp
 
 CMakeFiles/HUFFMAN.dir/lib/tree.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HUFFMAN.dir/lib/tree.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HUFFMAN/lib/tree.cpp > CMakeFiles/HUFFMAN.dir/lib/tree.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.cpp > CMakeFiles/HUFFMAN.dir/lib/tree.cpp.i
 
 CMakeFiles/HUFFMAN.dir/lib/tree.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HUFFMAN.dir/lib/tree.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HUFFMAN/lib/tree.cpp -o CMakeFiles/HUFFMAN.dir/lib/tree.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.cpp -o CMakeFiles/HUFFMAN.dir/lib/tree.cpp.s
 
 CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o.requires:
 
@@ -131,16 +131,16 @@ CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o.provides.build: CMakeFiles/HUFFMAN.dir/lib
 
 CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o: CMakeFiles/HUFFMAN.dir/flags.make
 CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o: ../lib/decoder.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o -c /home/motyaspr/CLionProjects/HUFFMAN/lib/decoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o -c /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.cpp
 
 CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HUFFMAN/lib/decoder.cpp > CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.cpp > CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.i
 
 CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HUFFMAN/lib/decoder.cpp -o CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.cpp -o CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.s
 
 CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o.requires:
 
@@ -155,16 +155,16 @@ CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o.provides.build: CMakeFiles/HUFFMAN.dir/
 
 CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o: CMakeFiles/HUFFMAN.dir/flags.make
 CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o: ../check_two_files.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o -c /home/motyaspr/CLionProjects/HUFFMAN/check_two_files.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o -c /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/check_two_files.cpp
 
 CMakeFiles/HUFFMAN.dir/check_two_files.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/HUFFMAN.dir/check_two_files.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HUFFMAN/check_two_files.cpp > CMakeFiles/HUFFMAN.dir/check_two_files.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/check_two_files.cpp > CMakeFiles/HUFFMAN.dir/check_two_files.cpp.i
 
 CMakeFiles/HUFFMAN.dir/check_two_files.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/HUFFMAN.dir/check_two_files.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HUFFMAN/check_two_files.cpp -o CMakeFiles/HUFFMAN.dir/check_two_files.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/check_two_files.cpp -o CMakeFiles/HUFFMAN.dir/check_two_files.cpp.s
 
 CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o.requires:
 
@@ -195,7 +195,7 @@ HUFFMAN: CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o
 HUFFMAN: CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o
 HUFFMAN: CMakeFiles/HUFFMAN.dir/build.make
 HUFFMAN: CMakeFiles/HUFFMAN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable HUFFMAN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable HUFFMAN"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/HUFFMAN.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -216,6 +216,6 @@ CMakeFiles/HUFFMAN.dir/clean:
 .PHONY : CMakeFiles/HUFFMAN.dir/clean
 
 CMakeFiles/HUFFMAN.dir/depend:
-	cd /home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/motyaspr/CLionProjects/HUFFMAN /home/motyaspr/CLionProjects/HUFFMAN /home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug /home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug /home/motyaspr/CLionProjects/HUFFMAN/cmake-build-debug/CMakeFiles/HUFFMAN.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-debug/CMakeFiles/HUFFMAN.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/HUFFMAN.dir/depend
 

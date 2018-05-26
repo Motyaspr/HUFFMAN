@@ -12,9 +12,9 @@ void compress(std::string in, std::string out){
     if (!input.is_open()){
         std::__throw_runtime_error("wrong name of file");
     }
-    size_t sz = 0;
+    uint64_t sz = 0;
     input.seekg(0, std::ios::end);
-    sz = (input.tellg());
+    sz = (uint64_t)(input.tellg());
     std::ofstream output(out, std::ios::binary);
     if (sz == 0) {
        return;
@@ -28,8 +28,9 @@ void compress(std::string in, std::string out){
         q.resize(std::min(SZ, sz - cur_read));
         input.read((char *) q.data(), q.size());
         c.add_block(q);
-        cur_read += SZ;
+        cur_read += q.size();
     }
+    c.make_zero();
     c.do_all();
     std::vector<uint8_t> cur = c.get_tr();
 
@@ -115,7 +116,7 @@ void decode(std::string inputFileName, std::string outputFileName)
 
 }
 
-bool check(std::string s1, std::string s2){
+void check(std::string s1, std::string s2){
     std::ifstream input(s1, std::ios::binary);
     input.seekg(0, std::ios::end);
     uint64_t len1 = input.tellg();
@@ -139,9 +140,6 @@ bool check(std::string s1, std::string s2){
 }
 
 int main(int argc, char* argv[]) {
-    //std::string s1, s2;
-    // std::cin >> s1 >> s2;
-    //freopen("tests/a.in", "w", stdout);
     if (argc != 4) {
         std::cout << "wrong count of args";
         return 0;
@@ -167,11 +165,12 @@ int main(int argc, char* argv[]) {
             std::cout << "FAILED";
         }
     }
-/*
-    std::string s = "kek.huf";
+    /*
+    std::string s = "big_rand.huf";
     s = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s;
-    std::string s1 = "kek.in";
+    std::string s1 = "big_rand.in";
     s1 = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s1;
-    check(s, s1);*/
+    check(s, s1);
+*/
     return 0;
 }

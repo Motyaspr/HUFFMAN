@@ -35,14 +35,14 @@ void decoder::make_code() {
     //mp[cur] = chars[ind2];
 }
 
+tree *ntree;
+
 void decoder::make_tree() {
     ntree = new tree();
     build(ntree, chars, struct_tree);
 }
 
 void decoder::decode_block(std::vector<uint8_t> const &block, std::vector<uint8_t> &out) {
-    while(ntree->get_p() != nullptr)
-        ntree = ntree->get_p();
     tree *cur = ntree;
     bool is_first = true;
     for (size_t q = 0; q < block.size(); q++) {

@@ -6,15 +6,15 @@
 
 #IncludeRegexTransform: 
 
-/home/motyaspr/CLionProjects/HUFFMAN/check_two_files.cpp
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/check_two_files.cpp
 
-/home/motyaspr/CLionProjects/HUFFMAN/lib/compressor.cpp
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.cpp
 compressor.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/compressor.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.h
 tree.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/tree.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
 
-/home/motyaspr/CLionProjects/HUFFMAN/lib/compressor.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.h
 cstdint
 -
 vector
@@ -24,53 +24,53 @@ cstddef
 algorithm
 -
 tree.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/tree.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
 
-/home/motyaspr/CLionProjects/HUFFMAN/lib/decoder.cpp
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.cpp
 decoder.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/decoder.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.h
 tree.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/tree.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
 utility
 -
 cstddef
 -
 
-/home/motyaspr/CLionProjects/HUFFMAN/lib/decoder.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.h
 cstdint
 -
 vector
 -
 tree.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/tree.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
 unordered_map
 -
 
-/home/motyaspr/CLionProjects/HUFFMAN/lib/tree.cpp
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.cpp
 cstddef
 -
 utility
 -
 tree.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/tree.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
 cstdint
 -
 
-/home/motyaspr/CLionProjects/HUFFMAN/lib/tree.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
 stdint-gcc.h
 -
 vector
 -
 
-/home/motyaspr/CLionProjects/HUFFMAN/main.cpp
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/main.cpp
 iostream
 -
 cstring
 -
 lib/compressor.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/compressor.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.h
 lib/decoder.h
-/home/motyaspr/CLionProjects/HUFFMAN/lib/decoder.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.h
 fstream
 -
 
