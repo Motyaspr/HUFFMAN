@@ -113,31 +113,8 @@ void decode(std::string inputFileName, std::string outputFileName)
 
 }
 
-void check(std::string s1, std::string s2){
-    std::ifstream input(s1, std::ios::binary);
-    input.seekg(0, std::ios::end);
-    uint64_t len1 = input.tellg();
-    input.seekg(0, std::ios::beg);
-    std::vector<uint8_t> q;
-    q.resize(len1);
-    input.read((char *) q.data(), q.size());
-    //string s2 = "/home/motyaspr/CLionProjects/HUFFMAN/tests/big_rand.huf";
-    std::ifstream input1(s2, std::ios::binary);
-    input1.seekg(0, std::ios::end);
-    uint64_t len2 = input1.tellg();
-    input1.seekg(0, std::ios::beg);
-    std::vector<uint8_t> t;
-    t.resize(len2);
-    input1.read((char *) t.data(), t.size());
-    std::cout << len1 << ' ' << len2 << "\n";
-    if (t == q)
-        std::cout << "URA";
-    else
-        std::cout << "(((";
-}
-
 int main(int argc, char* argv[]) {
-    /*if (argc != 4) {
+    if (argc != 4) {
         std::cout << "wrong count of args";
         return 0;
     }
@@ -162,13 +139,6 @@ int main(int argc, char* argv[]) {
             std::cout << ex.what();
         }
     }
-    */
-
-    std::string s = "big_test.huf";
-    s = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s;
-    std::string s1 = "big_test.in";
-    s1 = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s1;
-    check(s, s1);
 
     return 0;
 }
