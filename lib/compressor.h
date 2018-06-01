@@ -11,8 +11,7 @@
 #include <cstddef>
 #include <algorithm>
 #include "tree.h"
-#include "counter.h"
-#include "coder.h"
+#include "builder.h"
 
 class compressor {
 private:
@@ -27,7 +26,7 @@ private:
     size_t not_used;
 public:
     compressor() = default;
-    compressor(counter const &cop);
+    compressor(builder const &cop);
     uint64_t calc_len();
     std::vector<uint8_t> get_chars();
     std::vector<uint8_t> get_tr();

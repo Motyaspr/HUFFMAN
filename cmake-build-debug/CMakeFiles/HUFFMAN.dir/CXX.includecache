@@ -8,15 +8,17 @@
 
 /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/check_two_files.cpp
 
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/coder.cpp
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/builder.cpp
 algorithm
 -
-coder.h
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/coder.h
+builder.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/builder.h
+tree.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
 
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/coder.h
-counter.h
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/counter.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/builder.h
+cstdint
+-
 vector
 -
 tree.h
@@ -39,20 +41,8 @@ algorithm
 -
 tree.h
 /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/tree.h
-counter.h
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/counter.h
-coder.h
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/coder.h
-
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/counter.cpp
-counter.h
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/counter.h
-
-/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/counter.h
-vector
--
-cstdint
--
+builder.h
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/builder.h
 
 /home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.cpp
 decoder.h

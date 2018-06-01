@@ -4,8 +4,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/HUFFMAN.dir/lib/tree.cpp.o"
   "CMakeFiles/HUFFMAN.dir/lib/decoder.cpp.o"
   "CMakeFiles/HUFFMAN.dir/check_two_files.cpp.o"
-  "CMakeFiles/HUFFMAN.dir/lib/counter.cpp.o"
-  "CMakeFiles/HUFFMAN.dir/lib/coder.cpp.o"
+  "CMakeFiles/HUFFMAN.dir/lib/builder.cpp.o"
   "HUFFMAN.pdb"
   "HUFFMAN"
 )

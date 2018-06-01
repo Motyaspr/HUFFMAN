@@ -87,22 +87,16 @@
 		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/check_two_files.cpp">
 			<Option target="HUFFMAN"/>
 		</Unit>
-		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/coder.cpp">
+		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/builder.cpp">
 			<Option target="HUFFMAN"/>
 		</Unit>
-		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/coder.h">
+		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/builder.h">
 			<Option target="HUFFMAN"/>
 		</Unit>
 		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.cpp">
 			<Option target="HUFFMAN"/>
 		</Unit>
 		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/compressor.h">
-			<Option target="HUFFMAN"/>
-		</Unit>
-		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/counter.cpp">
-			<Option target="HUFFMAN"/>
-		</Unit>
-		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/counter.h">
 			<Option target="HUFFMAN"/>
 		</Unit>
 		<Unit filename="/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/lib/decoder.cpp">

@@ -9,4 +9,4 @@ if (CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
 endif ()
 
 
-add_executable(HUFFMAN main.cpp lib/compressor.cpp lib/compressor.h lib/tree.cpp lib/tree.h lib/decoder.cpp lib/decoder.h check_two_files.cpp lib/counter.cpp lib/counter.h lib/coder.cpp lib/coder.h)
+add_executable(HUFFMAN main.cpp lib/compressor.cpp lib/compressor.h lib/tree.cpp lib/tree.h lib/decoder.cpp lib/decoder.h check_two_files.cpp lib/builder.cpp lib/builder.h)

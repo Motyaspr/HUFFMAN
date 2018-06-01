@@ -21,23 +21,24 @@ void compress(std::string in, std::string out){
     }
 
     input.seekg(0, std::ios::beg);
-    counter t;
+    builder t;
     uint64_t cur_read = 0;
     std::vector<uint8_t> q;
     while(sz > cur_read){
         q.resize(std::min(SZ, sz - cur_read));
-        input.read((char *) q.data(), q.size());
-        t.add_block(q);
         cur_read += q.size();
+        input.read((char *) q.data(), q.size());
+        t.add_block(q, cur_read == sz);
     }
     compressor c(t);
     std::vector<uint8_t> cur = c.get_tr();
 
     size_t sz1 = cur.size();
     output.write((char *) &sz1, sizeof(uint32_t));
-    output.write((char*)cur.data(), sizeof(uint8_t)*c.get_tr().size());
+    output.write((char*)cur.data(), sizeof(uint8_t)*cur.size());
 
     size_t sz2 = c.get_chars().size();
+
     output.write((char *) &sz2, sizeof(uint32_t));
     output.write((char*)c.get_chars().data(), sizeof(uint8_t)*c.get_chars().size());
 
@@ -136,7 +137,7 @@ void check(std::string s1, std::string s2){
 }
 
 int main(int argc, char* argv[]) {
-    if (argc != 4) {
+    /*if (argc != 4) {
         std::cout << "wrong count of args";
         return 0;
     }
@@ -161,12 +162,13 @@ int main(int argc, char* argv[]) {
             std::cout << ex.what();
         }
     }
-    /*
-    std::string s = "big_rand.huf";
+    */
+
+    std::string s = "big_test.huf";
     s = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s;
-    std::string s1 = "big_rand.in";
+    std::string s1 = "big_test.in";
     s1 = "/home/motyaspr/CLionProjects/HUFFMAN/tests/" + s1;
     check(s, s1);
-*/
+
     return 0;
 }
