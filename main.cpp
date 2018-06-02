@@ -102,7 +102,7 @@ void decode(std::string inputFileName, std::string outputFileName)
         cur.resize(std::min(SZ, input_file_length-was_read));
         input.read((char *) cur.data(), cur.size());
         was_read += cur.size();
-        d.decode_block(cur, out, was_read == input_file_length);
+        d.decode_block(cur, out);
         output.write((char*)out.data(), out.size());
         out.clear();
 

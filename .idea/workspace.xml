@@ -2,33 +2,33 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="true">
     <generated>
-      <config projectName="HUFFMAN" targetName="HUFFMAN" />
       <config projectName="HUFFMAN" targetName="huflib" />
+      <config projectName="HUFFMAN" targetName="HUFFMAN" />
     </generated>
   </component>
   <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Release" CONFIG_NAME="Release" />
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+      <configuration PROFILE_NAME="RelWithDebInfo" CONFIG_NAME="RelWithDebInfo" />
     </configurations>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b8ad9b47-c32a-42de-9d55-30afb378a3b6" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/builder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/builder.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/builder.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/builder.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/compressor.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/compressor.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/compressor.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/compressor.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/decoder.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/decoder.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/decoder.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/decoder.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tree.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tree.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/tree.h" beforeDir="false" afterPath="$PROJECT_DIR$/lib/tree.h" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/interest_test.huf" beforeDir="false" afterPath="$PROJECT_DIR$/tests/interest_test.huf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/small_test.huf" beforeDir="false" afterPath="$PROJECT_DIR$/tests/small_test.huf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <ignored path="$PROJECT_DIR$/CMakeFiles/" />
     <ignored path="$PROJECT_DIR$/cmake-build-release/" />
+    <ignored path="$PROJECT_DIR$/cmake-build-relwithdebinfo/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,52 +42,58 @@
       <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CMakeLists.txt" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="14" selection-start-line="14" selection-end-line="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="decoder.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/decoder.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+            <state relative-caret-position="115">
+              <caret line="96" selection-start-line="96" selection-end-line="96" />
               <folding>
-                <element signature="e#97#115#0" expanded="true" />
+                <element signature="e#0#19#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tree.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/tree.h">
+      <file leaf-file-name="vector" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/c++/5/debug/vector">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-              <folding>
-                <element signature="e#91#114#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="207" column="26" lean-forward="true" selection-start-line="207" selection-end-line="207" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="builder.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/builder.cpp">
+      <file leaf-file-name="stl_vector.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
-              <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+            <state relative-caret-position="115">
+              <caret line="424" column="39" lean-forward="true" selection-start-line="424" selection-start-column="39" selection-end-line="424" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alloc_traits.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/c++/5/ext/alloc_traits.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="142">
+              <caret line="139" selection-start-line="139" selection-end-line="139" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="alloc_traits.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/c++/5/bits/alloc_traits.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="490" selection-start-line="490" selection-end-line="490" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tree.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/tree.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="109" selection-start-line="109" selection-end-line="109" />
               <folding>
-                <element signature="e#43#63#0" expanded="true" />
+                <element signature="e#43#61#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -96,8 +102,8 @@
       <file leaf-file-name="decoder.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/decoder.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-61">
-              <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+            <state relative-caret-position="1638">
+              <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
               <folding>
                 <element signature="e#43#63#0" expanded="true" />
               </folding>
@@ -105,23 +111,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compressor.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/compressor.h">
+      <file leaf-file-name="allocator.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/c++/5/bits/allocator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-              <folding>
-                <element signature="e#103#121#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="214">
+              <caret line="120" selection-start-line="120" selection-end-line="120" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="builder.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/builder.h">
+      <file leaf-file-name="decoder.h" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lib/decoder.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="162">
+              <caret line="21" selection-start-line="21" selection-end-line="21" />
               <folding>
                 <element signature="e#97#115#0" expanded="true" />
               </folding>
@@ -129,26 +132,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="compressor.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/compressor.cpp">
+      <file leaf-file-name="new_allocator.h" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
-              <folding>
-                <element signature="e#43#66#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="tree.cpp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/tree.cpp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
-              <folding>
-                <element signature="e#43#61#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="115">
+              <caret line="85" selection-start-line="85" selection-end-line="85" />
             </state>
           </provider>
         </entry>
@@ -163,6 +151,7 @@
       <find>data</find>
       <find>haf</find>
       <find>decoder</find>
+      <find>clear</find>
     </findStrings>
     <replaceStrings>
       <replace>f</replace>
@@ -188,14 +177,14 @@
         <option value="$PROJECT_DIR$/foo.cpp" />
         <option value="$PROJECT_DIR$/lib/compressor.h" />
         <option value="$PROJECT_DIR$/lib/builder.h" />
-        <option value="$PROJECT_DIR$/lib/compressor.cpp" />
-        <option value="$PROJECT_DIR$/lib/tree.h" />
-        <option value="$PROJECT_DIR$/lib/tree.cpp" />
         <option value="$PROJECT_DIR$/lib/builder.cpp" />
+        <option value="$PROJECT_DIR$/CMakeLists.txt" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/lib/compressor.cpp" />
+        <option value="$PROJECT_DIR$/lib/tree.cpp" />
+        <option value="$PROJECT_DIR$/lib/tree.h" />
         <option value="$PROJECT_DIR$/lib/decoder.h" />
         <option value="$PROJECT_DIR$/lib/decoder.cpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
-        <option value="$PROJECT_DIR$/CMakeLists.txt" />
       </list>
     </option>
   </component>
@@ -230,6 +219,11 @@
               <item name="Huffman" type="462c0819:PsiDirectoryNode" />
               <item name="lib" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HUFFMAN" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Huffman" type="462c0819:PsiDirectoryNode" />
+              <item name="tests" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -246,6 +240,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/tests" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -261,15 +256,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Build All">
+  <component name="RunManager" selected="Application.BuildAll2">
     <configuration name="Testss" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HUFFMAN" TARGET_NAME="HUFFMAN" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="HUFFMAN" RUN_TARGET_NAME="HUFFMAN" TEST_MODE="SUITE_TEST" />
-    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="decode $PROJECT_DIR$/tests/one_a_test.out $PROJECT_DIR$/tests/one_a_test.in " PASS_PARENT_ENVS_2="true" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="HUFFMAN" RUN_TARGET_NAME="HUFFMAN" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="Bible" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="compress $PROJECT_DIR$/tests/one_a_test.in $PROJECT_DIR$/tests/one_a_test.out" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HUFFMAN" TARGET_NAME="HUFFMAN" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="HUFFMAN" RUN_TARGET_NAME="HUFFMAN" />
+    <configuration name="Build All" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="compress $PROJECT_DIR$/tests/small_test.in $PROJECT_DIR$/tests/small " PASS_PARENT_ENVS_2="true" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="HUFFMAN" RUN_TARGET_NAME="HUFFMAN" EXPLICIT_BUILD_TARGET_NAME="all" />
+    <configuration name="BuildAll2" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="decode $PROJECT_DIR$/tests/small_test.out $PROJECT_DIR$/tests/small_test.huf " PASS_PARENT_ENVS_2="true" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="HUFFMAN" RUN_TARGET_NAME="HUFFMAN" EXPLICIT_BUILD_TARGET_NAME="all" />
     <configuration name="HUFFMAN" type="CMakeRunConfiguration" factoryName="Application" PROGRAM_PARAMS="compress $PROJECT_DIR$/tests/one_a_test.in $PROJECT_DIR$/tests/one_a_test.out" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HUFFMAN" TARGET_NAME="HUFFMAN" CONFIG_NAME="Release" RUN_TARGET_PROJECT_NAME="HUFFMAN" RUN_TARGET_NAME="HUFFMAN" />
     <configuration name="huflib" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="HUFFMAN" TARGET_NAME="huflib" CONFIG_NAME="Release" />
+    <configuration name="qqq" type="CompoundRunConfigurationType" factoryName="Compound Run Configuration">
+      <toRun type="CMakeRunConfiguration" name="Build All" targetId="CMakeBuildProfile:Debug" />
+      <toRun type="CMakeRunConfiguration" name="BuildAll2" targetId="CMakeBuildProfile:Debug" />
+    </configuration>
     <list>
       <item itemvalue="Application.Build All" />
+      <item itemvalue="Application.BuildAll2" />
+      <item itemvalue="Application.Bible" />
       <item itemvalue="Application.HUFFMAN" />
       <item itemvalue="Application.huflib" />
+      <item itemvalue="Compound.qqq" />
       <item itemvalue="Google Test.Testss" />
     </list>
   </component>
@@ -286,12 +290,14 @@
       <workItem from="1527330523434" duration="224000" />
       <workItem from="1527337837048" duration="4771000" />
       <workItem from="1527342832708" duration="25959000" />
-      <workItem from="1527937949769" duration="2444000" />
+      <workItem from="1527937949769" duration="4564000" />
+      <workItem from="1527942939115" duration="70000" />
+      <workItem from="1527943038007" duration="1880000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33398000" />
+    <option name="totallyTimeSpent" value="37468000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-11" width="1303" height="780" extended-state="6" />
@@ -301,12 +307,12 @@
       <window_info anchor="bottom" id="Messages" order="7" weight="0.4759036" />
       <window_info anchor="bottom" id="CMake" order="7" weight="0.3298193" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.41716868" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.41716868" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3990964" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -319,18 +325,18 @@
       <window_info anchor="bottom" id="CMake" order="11" weight="0.3298193" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24980783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.41716868" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.3990964" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Messages" order="7" weight="0.4759036" />
       <window_info id="Favorites" order="2" side_tool="true" />
@@ -361,51 +367,20 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/lib/compressor.cpp</url>
-          <line>72</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/lib/decoder.cpp</url>
-          <line>81</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
           <line>10</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
-          <url>file://$PROJECT_DIR$/lib/tree.cpp</url>
-          <line>103</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
           <url>file://$PROJECT_DIR$/main.cpp</url>
-          <line>103</line>
-          <option name="timeStamp" value="22" />
+          <line>110</line>
+          <option name="timeStamp" value="23" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="23" />
+      <option name="time" value="24" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file:///usr/include/c++/5/debug/vector">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7344">
-          <caret line="408" selection-start-line="408" selection-end-line="408" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tree.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1818">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/counter.cpp" />
-    <entry file="file://$PROJECT_DIR$/lib/counter.h" />
     <entry file="file://$PROJECT_DIR$/lib/compressor.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1350">
@@ -417,7 +392,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
       <provider selected="true" editor-type-id="text-editor" />
@@ -431,31 +412,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testHaff.sh" />
     <entry file="file://$PROJECT_DIR$/haffman.sh" />
-    <entry file="file://$PROJECT_DIR$/tests/empty_test.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/counter.cpp" />
     <entry file="file://$PROJECT_DIR$/lib/coder.cpp" />
     <entry file="file://$PROJECT_DIR$/lib/coder.h" />
     <entry file="file://$PROJECT_DIR$/lib/counter.h" />
     <entry file="file://$PROJECT_DIR$/CMakeFiles/Makefile2" />
-    <entry file="file://$PROJECT_DIR$/tests/interest_test.huf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret column="882" selection-start-column="882" selection-end-column="882" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/interest_test.in">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24408">
-          <caret line="1" column="979" selection-start-line="1" selection-start-column="979" selection-end-line="1" selection-end-column="979" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/interest_test.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/HUFFMAN.cbp" />
     <entry file="file://$PROJECT_DIR$/tests/big_test.in">
       <provider selected="true" editor-type-id="text-editor">
@@ -463,6 +424,46 @@
           <caret line="26798" selection-start-line="26798" selection-end-line="26798" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/small_test.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/qe.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/out_test.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/out_test.huf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foo.cpp" />
+    <entry file="file:///usr/include/c++/5/bits/stl_construct.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/out_test.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/qe.in">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/Bible.huf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/big_test.huf">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/one_a_test.huf">
       <provider selected="true" editor-type-id="text-editor">
@@ -474,89 +475,94 @@
     <entry file="file://$PROJECT_DIR$/tests/one_a_test.in">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/small_test.out">
+    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/interest_test.huf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/small_test.in">
+    <entry file="file://$PROJECT_DIR$/tests/interest_test.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/interest_test.in">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="63" selection-start-column="63" selection-end-column="63" />
+        <state relative-caret-position="324">
+          <caret line="1" column="979" selection-start-line="1" selection-start-column="979" selection-end-line="1" selection-end-column="979" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/empty_test.out">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/compressor.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#43#66#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/small_test.huf">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/qe.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/qe.in">
+    <entry file="file://$PROJECT_DIR$/tests/small_test.in">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+          <caret column="37" selection-start-column="37" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/out_test.in">
+    <entry file="file://$PROJECT_DIR$/tests/Bible.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="15" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+        <state relative-caret-position="-4482">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/out_test.out">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/out_test.huf">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foo.cpp" />
-    <entry file="file:///usr/include/c++/5/debug/vector">
+    <entry file="file://$PROJECT_DIR$/lib/compressor.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="207" selection-start-line="207" selection-end-line="207" />
+        <state relative-caret-position="162">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/5/bits/stl_construct.h">
+    <entry file="file://$PROJECT_DIR$/lib/builder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="151" selection-start-line="151" selection-end-line="151" />
+        <state relative-caret-position="-907">
+          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
+          <folding>
+            <element signature="e#43#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/5/bits/alloc_traits.h">
+    <entry file="file://$PROJECT_DIR$/lib/builder.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="516" selection-start-line="516" selection-end-line="516" />
+        <state relative-caret-position="414">
+          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+    <entry file="file://$PROJECT_DIR$/lib/tree.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="78" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/5/bits/allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="285">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#91#114#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/include/c++/5/debug/safe_container.h">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="124">
-          <caret line="40" selection-start-line="40" selection-end-line="40" />
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
         </state>
       </provider>
     </entry>
@@ -569,72 +575,77 @@
     </entry>
     <entry file="file:///usr/include/c++/5/debug/safe_base.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="204" selection-start-line="204" selection-end-line="204" />
+        <state relative-caret-position="52">
+          <caret line="194" selection-start-line="194" selection-end-line="194" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/compressor.cpp">
+    <entry file="file:///usr/include/c++/5/ext/alloc_traits.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="142">
+          <caret line="139" selection-start-line="139" selection-end-line="139" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/alloc_traits.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="490" selection-start-line="490" selection-end-line="490" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/allocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/ext/new_allocator.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="85" selection-start-line="85" selection-end-line="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="96" selection-start-line="96" selection-end-line="96" />
           <folding>
-            <element signature="e#43#66#0" expanded="true" />
+            <element signature="e#0#19#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/bits/stl_vector.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="424" column="39" lean-forward="true" selection-start-line="424" selection-start-column="39" selection-end-line="424" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/include/c++/5/debug/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="207" column="26" lean-forward="true" selection-start-line="207" selection-end-line="207" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/tree.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="17" />
+        <state relative-caret-position="133">
+          <caret line="109" selection-start-line="109" selection-end-line="109" />
           <folding>
             <element signature="e#43#61#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/tree.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
-          <folding>
-            <element signature="e#91#114#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/builder.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
-          <folding>
-            <element signature="e#97#115#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/builder.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="e#43#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/decoder.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-61">
-          <caret line="54" column="39" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
+        <state relative-caret-position="1638">
+          <caret line="91" column="17" lean-forward="true" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
           <folding>
             <element signature="e#43#63#0" expanded="true" />
           </folding>
@@ -643,28 +654,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/decoder.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        <state relative-caret-position="162">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
             <element signature="e#97#115#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/compressor.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#103#121#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/CMakeLists.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
