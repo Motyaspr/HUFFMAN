@@ -12,8 +12,6 @@ add_library(huflib STATIC lib/builder.h
         lib/decoder.h lib/compressor.h
         lib/tree.h lib/decoder.cpp lib/builder.cpp lib/tree.cpp lib/compressor.cpp)
 
-include_directories(lib)
-
 add_executable(HUFFMAN main.cpp)
 
 target_link_libraries(HUFFMAN huflib -lpthread)
