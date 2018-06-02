@@ -8,8 +8,6 @@
 #include <cstddef>
 
 
-tree *ntree;
-
 decoder::decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct) {
     chars = _chars;
     struct_tree = _struct;
