@@ -102,10 +102,9 @@ uint8_t tree::get_symb() {
 
 void tree::clear() {
     if (l != nullptr){
-        this->l->clear();
-        this->r->clear();
+        l->clear();
+        r->clear();
     }
     delete this;
 }
-
 

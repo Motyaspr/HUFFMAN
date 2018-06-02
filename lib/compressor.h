@@ -17,7 +17,7 @@ class compressor {
 private:
     std::vector<uint64_t> freq;
     uint64_t length;
-    std::vector<tree*> trees;
+    tree* trees;
     std::vector<std::vector<uint8_t>> code;
     std::vector<uint8_t> tr;
     uint8_t leaves;
@@ -33,7 +33,6 @@ public:
     size_t get_not_used();
     uint8_t get_last();
     void compress_block(std::vector<uint8_t> const &block, std::vector<uint8_t> &out);
-    ~compressor();
 };
 
 

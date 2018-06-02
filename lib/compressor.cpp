@@ -71,19 +71,13 @@ uint64_t compressor::calc_len() {
 
 compressor::compressor(builder const &cop) {
     freq = cop.get_coun();
-    trees = cop.get_trees();
+    trees = cop.get_trees()[0];
     code = cop.get_code();
     tr = cop.get_tr();
     chars = cop.get_chars();
     leaves = static_cast<uint8_t>(chars.size());
     not_used = 0;
     last = 0;
-}
-
-compressor::~compressor() {
-    if (trees[0])
-        trees[0]->clear();
-
 }
 
 

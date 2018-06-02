@@ -22,12 +22,12 @@ private:
 public:
     tree();
     tree(tree *l, tree *r, std::vector<uint8_t> _symbs, uint64_t _w);
-    void clear();
     void merge_trees(tree *a, tree *b);
     uint64_t get_weight();
     tree* get_l();
     tree* get_r();
     uint8_t get_symb();
+    void clear();
 };
 
 
