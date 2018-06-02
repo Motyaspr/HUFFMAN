@@ -16,24 +16,18 @@ private:
     std::vector<uint8_t> chars;
     std::vector<uint8_t> struct_tree;
     std::vector<std::vector<uint8_t>> cod;
-    //tree* ntree;
     uint64_t decoded, need;
     std::vector<bool> last;
-    //std::unordered_map<std::vector<uint8_t>, uint8_t> mp;
 public:
     decoder() = default;
     decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct);
 
-    void decode_block(std::vector<uint8_t> const &block, std::vector<uint8_t> &out);
-
-    void make_tree();
+    void decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out);
 
     void get_need(uint64_t t);
 
     uint64_t get_decoded();
     uint64_t get_need();
-
-    void clear();
 };
 
 
