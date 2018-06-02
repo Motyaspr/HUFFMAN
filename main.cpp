@@ -101,11 +101,11 @@ void decode(std::string inputFileName, std::string outputFileName)
     {
         cur.resize(std::min(SZ, input_file_length-was_read));
         input.read((char *) cur.data(), cur.size());
-
-        d.decode_block(cur, out);
+        was_read += cur.size();
+        d.decode_block(cur, out, was_read == input_file_length);
         output.write((char*)out.data(), out.size());
         out.clear();
-        was_read += cur.size();
+
         readd += cur.size();
     }
     if (d.get_need() != d.get_decoded())

@@ -100,4 +100,12 @@ uint8_t tree::get_symb() {
     return this->symbs[0];
 }
 
+void tree::clear() {
+    if (l != nullptr){
+        this->l->clear();
+        this->r->clear();
+    }
+    delete this;
+}
+
 

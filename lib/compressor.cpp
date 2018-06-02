@@ -80,6 +80,12 @@ compressor::compressor(builder const &cop) {
     last = 0;
 }
 
+compressor::~compressor() {
+    if (trees[0])
+        trees[0]->clear();
+
+}
+
 
 
 

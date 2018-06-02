@@ -21,13 +21,14 @@ private:
 public:
     decoder() = default;
     decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct);
-
-    void decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out);
+    ~decoder() = default;
+    void decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out, bool _f);
 
     void get_need(uint64_t t);
 
     uint64_t get_decoded();
     uint64_t get_need();
+
 };
 
 

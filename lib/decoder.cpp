@@ -18,7 +18,7 @@ decoder::decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct) {
     build(ntree, chars, struct_tree);
 }
 
-void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out) {
+void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out, bool _is) {
     tree *cur = ntree;
     bool is_first = true;
     for (size_t q = 0; q < block.size(); q++) {
@@ -77,6 +77,8 @@ void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &ou
             }
         }
     }
+    if (_is)
+        ntree->clear();
 
 }
 

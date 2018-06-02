@@ -33,6 +33,7 @@ public:
     size_t get_not_used();
     uint8_t get_last();
     void compress_block(std::vector<uint8_t> const &block, std::vector<uint8_t> &out);
+    ~compressor();
 };
 
 
