@@ -8,5 +8,12 @@ if (CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
     set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -fsanitize=address,undefined -D_GLIBCXX_DEBUG")
 endif ()
 
+add_library(huflib STATIC lib/builder.h
+        lib/decoder.h lib/compressor.h
+        lib/tree.h lib/decoder.cpp lib/builder.cpp lib/tree.cpp lib/compressor.cpp)
 
-add_executable(HUFFMAN main.cpp lib/compressor.cpp lib/compressor.h lib/tree.cpp lib/tree.h lib/decoder.cpp lib/decoder.h lib/builder.cpp lib/builder.h)
+include_directories(lib)
+
+add_executable(HUFFMAN main.cpp)
+
+target_link_libraries(HUFFMAN huflib -lpthread)
