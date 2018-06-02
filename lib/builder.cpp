@@ -6,8 +6,6 @@
 #include "builder.h"
 #include "tree.h"
 
-tree *t;
-
 bool cmp(tree *a, tree *b){
     return a->get_weight() > b->get_weight();
 }
@@ -23,7 +21,7 @@ void builder::add_block(std::vector<uint8_t> q, bool f) {
         if (coun[i] > 0){
             std::vector<uint8_t> cur;
             cur.push_back((uint8_t)i);
-            t = new tree(nullptr, nullptr, cur, coun[i]);
+            tree *t = new tree(nullptr, nullptr, cur, coun[i]);
             trees.push_back(t);
         }
     }
@@ -34,7 +32,7 @@ void builder::add_block(std::vector<uint8_t> q, bool f) {
 
 void builder::create_tree() {
     if (trees.size() == 1){
-        tree* cur = trees[0];
+        tree* cur = new tree(nullptr, nullptr, trees[0]->get_symbs(), trees[0]->get_weight());
         trees.push_back(cur);
     }
     while(trees.size() > 1){
@@ -80,8 +78,8 @@ std::vector<uint8_t> builder::get_chars() const{
     return chars;
 }
 
-std::vector<tree *> builder::get_trees() const{
-    return trees;
+tree* builder::get_trees() const{
+    return trees.front();
 }
 
 std::vector<std::vector<uint8_t>> builder::get_code() const{

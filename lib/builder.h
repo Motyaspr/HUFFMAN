@@ -23,10 +23,11 @@ public:
     builder() = default;
     void add_block(std::vector<uint8_t> q, bool is_last);
     std::vector<uint8_t> get_chars() const;
-    std::vector<tree*> get_trees() const;
+    tree* get_trees() const;
     std::vector<std::vector<uint8_t>> get_code() const;
     std::vector<uint8_t> get_tr() const ;
     std::vector<uint64_t> get_coun() const;
+
 };
 
 

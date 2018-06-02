@@ -1,7 +1,7 @@
 #include <iostream>
 #include <cstring>
-#include "lib/compressor.h"
-#include "lib/decoder.h"
+#include "compressor.h"
+#include "decoder.h"
 #include<fstream>
 
 

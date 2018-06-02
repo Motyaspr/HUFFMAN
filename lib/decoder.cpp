@@ -7,8 +7,6 @@
 #include <utility>
 #include <cstddef>
 
-tree *ntree;
-
 decoder::decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct) {
     chars = _chars;
     struct_tree = _struct;
@@ -53,13 +51,15 @@ void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &ou
                 last.clear();
                 cur = ntree;
                 if (need == decoded){
+                    if (_is)
+                        ntree->clear();
                     return;
                 }
             }
         }
         is_first = false;
         while (j >= 0) {
-            last.push_back((bool) ((i >> j) & 1));
+            last.push_back(static_cast<bool>((i >> j) & 1));
             j--;
             if (!last.back())
                 cur = cur->get_l();
@@ -71,6 +71,8 @@ void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &ou
                 last.clear();
                 cur = ntree;
                 if (need == decoded){
+                    if (_is)
+                        ntree->clear();
                     return;
                 }
             }

@@ -26,7 +26,8 @@ private:
     size_t not_used;
 public:
     compressor() = default;
-    compressor(builder const &cop);
+    compressor(builder &cop);
+    ~compressor();
     uint64_t calc_len();
     std::vector<uint8_t> get_chars();
     std::vector<uint8_t> get_tr();

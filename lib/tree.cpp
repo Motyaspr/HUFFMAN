@@ -101,10 +101,15 @@ uint8_t tree::get_symb() {
 }
 
 void tree::clear() {
-    if (l != nullptr){
+    if (l != nullptr) {
         l->clear();
         r->clear();
     }
     delete this;
 }
+
+std::vector<uint8_t> tree::get_symbs() {
+    return symbs;
+}
+
 
