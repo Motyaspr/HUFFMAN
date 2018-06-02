@@ -14,4 +14,4 @@ add_library(huflib STATIC lib/builder.h
 
 add_executable(HUFFMAN main.cpp)
 
-target_link_libraries(HUFFMAN huflib -lpthread)
+target_link_libraries(HUFFMAN huflib)
