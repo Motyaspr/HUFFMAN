@@ -18,6 +18,7 @@ private:
     std::vector<std::vector<uint8_t>> cod;
     uint64_t decoded, need;
     std::vector<bool> last;
+    bool is_f;
     tree *ntree;
 public:
     decoder() = default;

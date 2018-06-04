@@ -71,7 +71,7 @@ void build(tree *ntree, std::vector<uint8_t> &symbs, std::vector<uint8_t> &struc
         }
         else{
             if (curind1 == symbs.size())
-                std::runtime_error("wrong tree");
+                throw std::runtime_error("wrong tree");
             ntree->symbs.push_back(symbs[curind1++]);
 
             if (ntree->p == nullptr)
@@ -86,7 +86,7 @@ void build(tree *ntree, std::vector<uint8_t> &symbs, std::vector<uint8_t> &struc
     }
     ntree->symbs.push_back(symbs[curind1]);
     if (curind1 != symbs.size() - 1)
-        std::runtime_error("Wrong tree");
+        throw std::runtime_error("Wrong tree");
 }
 
 tree *tree::get_l() {
