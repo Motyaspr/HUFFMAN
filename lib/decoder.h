@@ -20,7 +20,6 @@ private:
     std::vector<bool> last;
     bool is_f;
     tree *ntree;
-    bool is_f;
 public:
     decoder() = default;
     decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct);
