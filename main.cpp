@@ -10,7 +10,7 @@ const size_t SZ = 1;
 void compress(std::string in, std::string out){
     std::ifstream input(in, std::ios::binary);
     if (!input.is_open()){
-        std::runtime_error("wrong name of file");
+        throw std::runtime_error("wrong name of file");
     }
     uint64_t sz = 0;
     input.seekg(0, std::ios::end);
@@ -65,7 +65,7 @@ void decode(std::string inputFileName, std::string outputFileName)
                                                                                                                                                                                                                                             {
     std::ifstream input(inputFileName, std::ios::binary);
     if (!input.is_open()){
-        std::runtime_error("wrong name of file");
+        throw std::runtime_error("wrong name of file");
     }
 
     uint64_t input_file_length;
@@ -74,7 +74,7 @@ void decode(std::string inputFileName, std::string outputFileName)
     if (input_file_length == 0)
         return;
     if (input_file_length < 21)
-        std::runtime_error("can't decode this file");
+        throw std::runtime_error("can't decode this file");
     std::ofstream output(outputFileName, std::ios::binary);
 
     input.seekg(0, std::ios::beg);
@@ -109,7 +109,7 @@ void decode(std::string inputFileName, std::string outputFileName)
         readd += cur.size();
     }
     if (d.get_need() != d.get_decoded())
-        std::runtime_error("wrong text");
+        throw std::runtime_error("wrong text");
 
 }
 

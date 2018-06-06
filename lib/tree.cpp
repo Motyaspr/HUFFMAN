@@ -6,6 +6,7 @@
 #include <utility>
 #include "tree.h"
 #include <cstdint>
+#include <stdexcept>
 
 tree::tree() {
     l = nullptr;
@@ -70,11 +71,11 @@ void build(tree *ntree, std::vector<uint8_t> &symbs, std::vector<uint8_t> &struc
         }
         else{
             if (curind1 == symbs.size())
-                std::__throw_runtime_error("wrong tree");
+                throw std::runtime_error("wrong tree");
             ntree->symbs.push_back(symbs[curind1++]);
 
             if (ntree->p == nullptr)
-                std::__throw_runtime_error("wrong tree");
+                std::runtime_error("wrong tree");
             ntree = ntree->p;
             while(ntree->r != nullptr && ntree->p != nullptr)
                 ntree = ntree->p;
@@ -85,7 +86,7 @@ void build(tree *ntree, std::vector<uint8_t> &symbs, std::vector<uint8_t> &struc
     }
     ntree->symbs.push_back(symbs[curind1]);
     if (curind1 != symbs.size() - 1)
-        std::__throw_runtime_error("Wrong tree");
+        throw std::runtime_error("Wrong tree");
 }
 
 tree *tree::get_l() {
@@ -100,15 +101,13 @@ uint8_t tree::get_symb() {
     return this->symbs[0];
 }
 
-void tree::clear() {
-    if (l != nullptr) {
-        l->clear();
-        r->clear();
-    }
-    delete this;
-}
-
 std::vector<uint8_t> tree::get_symbs() {
     return symbs;
 }
 
+tree::~tree() {
+    if (l != nullptr) {
+        delete l;
+        delete r;
+    }
+}

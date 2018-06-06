@@ -28,7 +28,7 @@ public:
     tree* get_r();
     uint8_t get_symb();
     std::vector<uint8_t> get_symbs();
-    void clear();
+    ~tree();
 
 };
 
