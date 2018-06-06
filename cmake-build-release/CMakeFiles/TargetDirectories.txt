@@ -1,0 +1,4 @@
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-release/CMakeFiles/rebuild_cache.dir
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-release/CMakeFiles/edit_cache.dir
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-release/CMakeFiles/HUFFMAN.dir
+/home/motyaspr/CLionProjects/HW_HUFFMAN/Huffman/cmake-build-release/CMakeFiles/huflib.dir

@@ -19,11 +19,12 @@ private:
     uint64_t decoded, need;
     std::vector<bool> last;
     tree *ntree;
+    bool is_f;
 public:
     decoder() = default;
     decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct);
-    ~decoder() = default;
-    void decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out, bool _f);
+    ~decoder();
+    void decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out);
 
     void get_need(uint64_t t);
 
