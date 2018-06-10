@@ -15,11 +15,13 @@ void compress(std::string in, std::string out){
     uint64_t sz = 0;
     input.seekg(0, std::ios::end);
     sz = (uint64_t)(input.tellg());
-    std::ofstream output(out, std::ios::binary);
+
     if (sz == 0) {
+        std::ofstream output(out, std::ios::binary);
+        output.close();
        return;
     }
-
+    std::ofstream output(out, std::ios::binary);
     input.seekg(0, std::ios::beg);
     builder t;
     uint64_t cur_read = 0;
