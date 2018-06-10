@@ -17,13 +17,16 @@ class compressor {
 private:
     std::vector<uint64_t> freq;
     uint64_t length;
-    tree* trees;
+    tree* treq;
+    std::vector<tree*> trees;
     std::vector<std::vector<uint8_t>> code;
     std::vector<uint8_t> tr;
     uint8_t leaves;
     std::vector<uint8_t> chars;
     uint8_t last;
     size_t not_used;
+    void create_code();
+    void create_tree();
 public:
     compressor() = default;
     compressor(builder &cop);

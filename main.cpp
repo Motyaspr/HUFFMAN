@@ -30,7 +30,7 @@ void compress(std::string in, std::string out){
         q.resize(std::min(SZ, sz - cur_read));
         cur_read += q.size();
         input.read((char *) q.data(), q.size());
-        t.add_block(q, cur_read == sz);
+        t.add_block(q);
     }
     compressor c(t);
     std::vector<uint8_t> cur = c.get_tr();

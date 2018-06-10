@@ -9,15 +9,12 @@
 
 decoder::decoder(std::vector<uint8_t> _chars, std::vector<uint8_t> _struct) : chars(_chars), struct_tree(_struct) {
     decoded = 0;
-    ntree = new tree();
     is_f = true;
+    build(&ntree, chars, struct_tree);
 }
 
 void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &out) {
-    if (is_f)
-        build(ntree, chars, struct_tree);
-    is_f = false;
-    tree *cur = ntree;
+    tree *cur = &ntree;
     bool is_first = true;
     for (unsigned char i : block) {
         int j = 7;
@@ -49,7 +46,7 @@ void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &ou
                 out.push_back(cur->get_symb());
                 decoded += last.size();
                 last.clear();
-                cur = ntree;
+                cur = &ntree;
                 if (need == decoded){
                     return;
                 }
@@ -67,7 +64,7 @@ void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &ou
                 out.push_back(cur->get_symb());
                 decoded += last.size();
                 last.clear();
-                cur = ntree;
+                cur = &ntree;
                 if (need == decoded){
                     return;
                 }
@@ -89,8 +86,4 @@ uint64_t decoder::get_decoded() {
 
 uint64_t decoder::get_need() {
     return need;
-}
-
-decoder::~decoder() {
-    delete ntree;
 }
