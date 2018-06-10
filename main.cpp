@@ -71,8 +71,11 @@ void decode(std::string inputFileName, std::string outputFileName)
     uint64_t input_file_length;
     input.seekg(0, std::ios::end);
     input_file_length = input.tellg();
-    if (input_file_length == 0)
+    if (input_file_length == 0) {
+        std::ofstream output(outputFileName, std::ios::binary);
+        output.close();
         return;
+    }
     if (input_file_length < 21)
         throw std::runtime_error("can't decode this file");
     std::ofstream output(outputFileName, std::ios::binary);
