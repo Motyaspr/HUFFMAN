@@ -64,7 +64,7 @@ void compress(std::string in, std::string out){
 }
 
 void decode(std::string inputFileName, std::string outputFileName)
-                                                                                                                                                                                                                                            {
+{
     std::ifstream input(inputFileName, std::ios::binary);
     if (!input.is_open()){
         throw std::runtime_error("wrong name of file");
@@ -81,7 +81,6 @@ void decode(std::string inputFileName, std::string outputFileName)
     if (input_file_length < 21)
         throw std::runtime_error("can't decode this file");
     std::ofstream output(outputFileName, std::ios::binary);
-
     input.seekg(0, std::ios::beg);
     uint32_t sz1;
     std::vector<uint8_t> struc;
@@ -89,6 +88,12 @@ void decode(std::string inputFileName, std::string outputFileName)
     input.read((char*)&sz1, sizeof(sz1));
     struc.resize(sz1);
     input.read((char*)struc.data(), (struc.size()) * sizeof(uint8_t));
+
+    for (int i = 0; i < sz1; i++){
+        if (struc[i] != 0 && struc[i] != 1)
+            throw std::runtime_error("can't decode this file");
+    }
+
     uint32_t sz2;
     input.read((char*)&sz2, sizeof(sz2));
     std::vector<uint8_t> symbs;

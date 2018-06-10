@@ -1,2 +1,0 @@
-/usr/bin/ar qc libhuflib.a  CMakeFiles/huflib.dir/lib/decoder.cpp.o CMakeFiles/huflib.dir/lib/builder.cpp.o CMakeFiles/huflib.dir/lib/tree.cpp.o CMakeFiles/huflib.dir/lib/compressor.cpp.o
-/usr/bin/ranlib libhuflib.a

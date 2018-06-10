@@ -23,18 +23,30 @@ void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &ou
             if (is_first) {
                 for (auto &&t : last) {
                     if (!t)
-                        cur = cur->get_l();
+                        if (cur->get_l() == nullptr){
+                            throw std::runtime_error("Wrong tree");
+                        }else
+                            cur = cur->get_l();
                     else
-                        cur = cur->get_r();
+                        if (cur->get_r() != nullptr)
+                            cur = cur->get_r();
+                        else
+                            throw std::runtime_error("Wrong tree");
                 }
             }
             is_first = false;
             while (j >= 0) {
                 last.push_back(((bool) ((i >> j) & 1)));
                 if (!last.back())
-                    cur = cur->get_l();
+                    if (cur->get_l() != nullptr)
+                        cur = cur->get_l();
+                    else
+                        throw std::runtime_error("Wrong tree");
                 else
-                    cur = cur->get_r();
+                    if (cur->get_r() != nullptr)
+                        cur = cur->get_r();
+                    else
+                        throw std::runtime_error("Wrong tree");
 
                 j--;
                 if (cur->get_r() == nullptr) {
@@ -57,9 +69,15 @@ void decoder::decode_block(std::vector<uint8_t> &block, std::vector<uint8_t> &ou
             last.push_back(static_cast<bool>((i >> j) & 1));
             j--;
             if (!last.back())
-                cur = cur->get_l();
+                if (cur->get_l() != nullptr)
+                    cur = cur->get_l();
+                else
+                    throw std::runtime_error("Wrong tree");
             else
+            if (cur->get_r() != nullptr)
                 cur = cur->get_r();
+            else
+                throw std::runtime_error("Wrong tree");
             if (cur->get_r() == nullptr) {
                 out.push_back(cur->get_symb());
                 decoded += last.size();
